@@ -17,7 +17,7 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar color="dark" dark expand="md">
         <NavbarBrand>
           Mi app
         </NavbarBrand>
@@ -25,17 +25,17 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem className="mx-1">
-              <Link to="/">Inicio</Link>
+              <Link to="/" className="text-light">Inicio</Link>
             </NavItem>
             <NavItem className="mx-1">
-              <Link to="/personajes">Personajes</Link>
+              <Link to="/products" className="text-light">Productos</Link>
             </NavItem>
             <NavItem className="mx-1">
-              <Link to="/contacto">Contacto</Link>
+              <Link to="/create-product" className="text-light">Crear Producto</Link>
             </NavItem>
           </Nav>
           <NavbarText className="mx-1">
-            React API Rick & Morty
+            React APP B47
           </NavbarText>
         </Collapse>
       </Navbar>

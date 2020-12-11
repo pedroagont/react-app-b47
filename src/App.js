@@ -5,9 +5,9 @@ import {
 } from "react-router-dom";
 
 import NavBar from './components/NavBar';
-import Personajes from './pages/Personajes';
-import PersonajeDetails from './pages/PersonajeDetails';
-import Contacto from './pages/Contacto';
+import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
+import CreateProduct from './pages/CreateProduct';
 import Inicio from './pages/Inicio';
 
 // React Router -> Nos permite renderizar dinámicamente los componentes desde el cliente sin necesidad de refrescar la página o cargar una nueva desde el lado del servidor
@@ -18,9 +18,9 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="/contacto" component={Contacto}/>
-        <Route exact path="/personajes" component={Personajes}/>
-        <Route exact path="/personajes/:id" component={PersonajeDetails}/>
+        <Route exact path="/create-product" component={CreateProduct}/>
+        <Route exact path="/products" component={Products}/>
+        <Route exact path="/products/:id" component={ProductDetails}/>
         <Route exact path="/" component={Inicio}/>
       </Switch>
     </Router>
