@@ -17,7 +17,7 @@ const ProductDetails = () => {
       })
       .catch(err => console.log(err));
   }
-  useEffect(() => getDetails(id), []);
+  useEffect(() => getDetails(id), [id]);
 
   const isEmpty = (data) => {
     if(!data.data) return (
