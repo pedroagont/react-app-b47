@@ -37,7 +37,7 @@ const CreateProduct = (props) => {
 
   const handleSubmit = async () => {
     const jsonSend = { nombre, categoria, precio, imagen };
-    const URL = 'http://api-firebase-b47.herokuapp.com/api/v1/products';
+    const URL = 'https://api-firebase-b47.herokuapp.com/api/v1/products';
     await axios.post(URL, jsonSend)
       .then(res => {
         alert('¡Producto creado! 😇');

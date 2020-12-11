@@ -17,7 +17,7 @@ const Products = () => {
   // Similar a utilizar el método componentDidUpdate() en componentes clase
   // Sintaxis: useEffect(callback, []) (si agregamos como segundo argumento un arreglo vacío optimizamos el renderizado)
   const getProducts = async () => {
-    const URL = 'http://api-firebase-b47.herokuapp.com/api/v1/products';
+    const URL = 'https://api-firebase-b47.herokuapp.com/api/v1/products';
     await axios.get(URL)
       .then(response => {
         setProducts(response.data);

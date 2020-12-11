@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const [details, setDetails] = useState({});
 
   const getDetails = async (productId) => {
-    const URL = 'http://api-firebase-b47.herokuapp.com/api/v1/products/'+productId;
+    const URL = 'https://api-firebase-b47.herokuapp.com/api/v1/products/'+productId;
     await axios.get(URL)
       .then(response => {
         setDetails(response.data);
